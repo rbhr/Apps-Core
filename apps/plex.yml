@@ -74,6 +74,8 @@
           - '/etc/localtime:/etc/localtime:ro'
           - '{{path.stdout}}:{{path.stdout}}'
           - '/mnt:/mnt'
+          - '/mnt/unionfs/TVShows:/data/tvshows'
+          - '/mnt/unionfs/Movies:/data/movies'
           - '/opt/appdata/{{pgrole}}/database:/config'
           - '/tmp:/tmp'
           - '/opt/transcodes:/transcode'
